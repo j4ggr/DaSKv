@@ -1,0 +1,26 @@
+[project]
+name = "DaSKv"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "j4ggr", email = "reto@jaeggli.email"},
+]
+dependencies = ["matplotlib>=3.10.1", "kivy>=2.3.1"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+test = [
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
+]
+doc = [
+    "mkdocs>=1.6.1",
+    "mkdocstrings[python]>=0.29.1",
+    "mkdocs-material>=9.6.12",
+]
